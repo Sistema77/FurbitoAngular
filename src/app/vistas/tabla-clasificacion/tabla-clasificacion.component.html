@@ -1,0 +1,24 @@
+<table class="container text-center border">
+     <thead class="border">
+          <th class="border" scope="col">Equipo</th>
+          <th class="border" scope="col">PJ</th>
+          <th class="border" scope="col">G</th>
+          <th class="border" scope="col">E</th>
+          <th class="border" scope="col">P</th>
+          <th class="border" scope="col">GF</th>
+          <th class="border" scope="col">GE</th>
+          <th class="border" scope="col">PT</th>
+          <th class="border" scope="col">GOALSSEG</th>
+     </thead>
+     <tbody>
+          <tr *ngFor="let equipo of tablaClasificacion">
+               <td class="text-center col border">{{equipo.equipo}}</td>
+               <td class="text-center col border">{{equipo.partidosGanados}}</td>
+               <td class="text-center col border">{{equipo.goles}}</td>
+               <td class="text-center col border">{{equipo.empates}}</td>
+               <td class="text-center col border">{{equipo.perdidos}}</td>
+               <td class="text-center col border">{{equipo.golesFavor}}</td>
+               <td class="text-center col border">{{equipo.golesEnContra}}</td>
+          </tr> 
+     </tbody>
+   </table>
